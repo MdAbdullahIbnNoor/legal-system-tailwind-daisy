@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,9 @@
                 extend: {
                   colors: {
                     clifford: '#da373d',
+                    'primary-clr': '#B68C5A',
+                    'title-clr': '#414040',
+                    'p-clr': '#707070',
                   }
                 }
               }
@@ -47,9 +50,315 @@
     </head>
     <body>
 
-        <header></header>
+        <header class="box-border my-24">
+            <nav class=" body-font max-w-screen-xl mx-auto mb-10">
+                <div
+                    class="container mx-auto flex flex-wrap py-5 px-0 flex-col md:flex-row items-center">
+                    <a
+                        class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                        <img src="./images/business.png" class="w-12">
+                        <span
+                            class="ml-3 text-5xl font-extrabold font-garmond text-title-clr">Justice</span>
+                    </a>
+                    <div
+                        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-p-clr justify-center">
+                        <a href="#" class="text-p-clr hover:underline mr-7">
+                            Home
+                        </a>
 
-        <main></main>
+                        <a href="#" class="text-p-clr hover:underline">
+                            Services
+                        </a>
+
+                        <span class="mx-5 text-p-clr rtl:-scale-x-100">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+
+                        <a href="#" class="text-p-clr hover:underline">
+                            Cases
+                        </a>
+
+                        <span class="mx-5 text-p-clr rtl:-scale-x-100">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+
+                        <a href="#" class="text-p-clr hover:underline">
+                            Blog
+                        </a>
+
+                        <span class="mx-5 text-p-clr rtl:-scale-x-100">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+
+                        <a href="#" class="text-p-clr hover:underline">
+                            Contact Us
+                        </a>
+
+                        <span class="mx-5 text-p-clr rtl:-scale-x-100">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                    <button
+                        class="inline-flex items-center bg-primary-clr border-0 py-3 px-5 focus:outline-none rounded text-white font-medium mt-4 md:mt-0">Free
+                        Consultation
+                    </button>
+                </div>
+            </nav>
+
+            <div class="hero max-w-screen-xl mx-auto rounded-xl "
+                style="background-image: url('./images/banner.png');">
+                <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+                <div
+                    class="hero-content text-center text-neutral-content px-72 py-32">
+                    <div class="min-w-md space-y-8">
+                        <h1
+                            class="mb-5 text-7xl font-garmond font-extrabold text-white">We
+                            Provide Effective <br> Legal Solutions</h1>
+                        <p class="mb-5 font-poppins text-white">There are many
+                            variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form,
+                            by injected humour.</p>
+
+                        <div class="gap-7 font-poppins">
+                            <input type="text"
+                                placeholder="Search your services"
+                                class="input input-bordered w-9/12 mr-4 font-light text-sm" />
+                            <button
+                                class="btn border-0 bg-primary-clr text-white font-semibold">Get
+                                Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Legal Practice Area -->
+            <section class="bg-white my-24 max-w-screen-xl mx-auto px-0">
+                <div class="container px-0 py-10 mx-auto">
+                    <h1
+                        class="text-2xl font-extrabold text-center text-title-clr font-garmond lg:text-5xl py-10">The
+                        Legal Practice Area</h1>
+                    <p class="mb-5 font-poppins text-p-clr text-center">There
+                        are many
+                        variations of passages of Lorem Ipsum available, but
+                        the majority have <br> suffered alteration in some form,
+                        by injected humour.</p>
+
+                    <div
+                        class="grid grid-cols-1 gap-0 mt-8 xl:mt-12 xl:gap-0 md:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="flex flex-col items-center px-24 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white border-b-2 border-r-2">
+
+                            <img src="./images/business.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Business
+                                Law</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+                        <div
+                            class="flex flex-col items-center px-24 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white border-b-2 border-r-2">
+
+                            <img src="./images/criminal.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Criminal
+                                Law</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+                        <div
+                            class="flex flex-col items-center px-24 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white border-b-2">
+
+                            <img src="./images/child.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Child
+                                Support</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center px-20 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white border-r-2">
+
+                            <img src="./images/education.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Education
+                                Law</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+                        <div
+                            class="flex flex-col items-center px-24 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white border-r-2">
+
+                            <img src="./images/divorce.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Divorce
+                                Law</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+                        <div
+                            class="flex flex-col items-center px-24 py-10 space-y-8 text-center bg-white hover:bg-gradient-to-b from-gray-200 to-white ">
+
+                            <img src="./images/tax.png" alt>
+
+                            <h1
+                                class="text-3xl font-semibold text-title-clr font-garmond">Tax
+                                Law</h1>
+
+                            <p class="text-p-clr text-center">
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour.
+                            </p>
+
+                            <a href="#"
+                                class="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                <button
+                                    class="bg-primary-clr rounded-full w-10 h-10"><i
+                                        class="fa-solid fa-arrow-right"
+                                        style="color: #ffffff;"></i></button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white my-24 max-w-screen-xl mx-auto px-0">
+                <div class="container px-0 py-10 mx-auto">
+                    <h1
+                        class="text-2xl font-extrabold text-center text-title-clr font-garmond lg:text-5xl py-10">The
+                        Legal Practice Area</h1>
+                    <p class="mb-5 font-poppins text-p-clr text-center">There
+                        are many
+                        variations of passages of Lorem Ipsum available, but
+                        the majority have <br> suffered alteration in some form,
+                        by injected humour.</p>
+
+                        <div class="carousel w-full">
+                            <div id="slide1" class="carousel-item relative w-full">
+                              
+                              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide4" class="btn btn-circle">❮</a> 
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                              </div>
+                            </div> 
+                            <div id="slide2" class="carousel-item relative w-full">
+                              <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" class="btn btn-circle">❮</a> 
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                              </div>
+                            </div> 
+                            <div id="slide3" class="carousel-item relative w-full">
+                              <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" class="btn btn-circle">❮</a> 
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                              </div>
+                            </div> 
+                            <div id="slide4" class="carousel-item relative w-full">
+                              <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide3" class="btn btn-circle">❮</a> 
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+            </section>
+        </main>
 
         <footer></footer>
     </body>
